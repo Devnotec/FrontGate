@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" x-data="{ theme: '' , themeChecked:false }" x-init="theme==''?themeChecked=false:themeChecked=true;theme=getSystemTheme()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/bootstrap-grid.rtl.min.css">
+    <link rel="stylesheet" href="src/css/app.css">
+    <link rel="stylesheet" href="src/css/toggle.css">
+    <title>Front Gate | Structuring With One Command</title>
+</head>
+
+<body x-bind:class="theme">
+
+    <main class="container-fluid">
+        <div class="menu p-3 fixed-top">
+            <input x-bind:checked="themeChecked"  type="checkbox" class="toggle" id="toggle-theme" x-on:click="theme == ''? theme='dark':theme=''">
+        </div>
+        <div class="app-holder">
+            <header class="row download-page-header">
+                <div class="header-content">
+                    <h1>Front Gate</h1>
+                    <h3>
+                        Front End Project Structuring With One Command
+                    </h3>
+                </div>
+
+            </header>
+
+            <!-- Getting Started Section -->
+
+            <h4 class="header-section">Structuring With One Command</h4>
+            <section class="container">
+                <div class="row">
+                    <p class="m-3">
+                        Open Command Line in a Directory and Write just <strong>this</strong>
+
+                    </p>
+
+                    <code>> gate -p YOUR_PROJECT_NAME</code>
+                </div>
+            </section>
+
+            <!-- Download Section -->
+            <h4 class="header-section">Download</h4>
+            <section class="benefits">
+
+
+                <a href="https://devnotec.storage.iran.liara.space/Front%20Gate%20Publics/Windows/Setup.exe">
+                    <div class="benefits-box-holder">
+                        <div class="box">
+                            <img src="src/images/windows.svg" />
+                            <span> Download For Windows</span>
+                            <strong>Size : 30 MB</strong>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="benefits-box-holder" diactive>
+                        <div class="box">
+                            <img src="src/images/linux.svg" />
+                            <span> Download for Linux</span>
+                            <strong>Comming Soon ..</strong>
+
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="benefits-box-holder" diactive>
+                        <div class="box">
+                            <img src="src/images/mac.svg" />
+                            <span> Download for Mac</span>
+                            <strong>Comming Soon ..</strong>
+                        </div>
+                    </div>
+                </a>
+
+            </section>
+
+
+            <h4 class="header-section">Preview in Action</h4>
+            <section class="benefits">
+
+            </section>
+
+
+            <footer class="p-4 d-flex">
+
+                <div class="">
+                    <span class="m-4">
+                        Developed by <strong>Devnotec Developers</strong> Team
+                    </span>
+                </div>
+                <span>
+                    All rights reserved
+                </span>
+            </footer>
+        </div>
+
+
+    </main>
+</body>
+<script src="src/js/bootstrap.bundle.min.js"></script>
+<script src="src/js/theme.min.js"></script>
+<script src="src/js/alpinejs.min.js" defer></script>
+
+
+</html>
