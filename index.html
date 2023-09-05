@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fa" x-data="{ theme: '' , themeChecked:false }" x-init="theme==''?themeChecked=false:themeChecked=true;theme=getSystemTheme()">
+<html lang="fa" x-data="{ theme: '' , themeChecked:false }"
+    x-init="theme==''?themeChecked=false:themeChecked=true;theme=getSystemTheme()">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +15,8 @@
 
     <main class="container-fluid">
         <div class="menu p-3 fixed-top">
-            <input x-bind:checked="themeChecked"  type="checkbox" class="toggle" id="toggle-theme" x-on:click="theme == ''? theme='dark':theme=''">
+            <input x-bind:checked="themeChecked" type="checkbox" class="toggle" id="toggle-theme"
+                x-on:click="theme == ''? theme='dark':theme=''">
         </div>
         <div class="app-holder">
             <header class="row download-page-header">
@@ -28,58 +30,59 @@
             </header>
 
             <!-- Getting Started Section -->
+            <main class="row col-xxxl-7 col-xxl-8 row col-xl-9 col-lg-10 col-md-11 col-sm-12 d-block mx-auto">
+                <h4 class="header-section">Structuring With One Command</h4>
+                <section class="container">
+                    <div class="row">
+                        <p class="m-3 mx-5">
+                            Open a command line terminal in a directory and run the following command to create a <strong> standard </strong> structure for you! 
 
-            <h4 class="header-section">Structuring With One Command</h4>
-            <section class="container">
-                <div class="row">
-                    <p class="m-3">
-                        Open Command Line in a Directory and Write just <strong>this</strong>
+                        </p>
 
-                    </p>
-
-                    <code>> gate -p YOUR_PROJECT_NAME</code>
-                </div>
-            </section>
-
-            <!-- Download Section -->
-            <h4 class="header-section">Download</h4>
-            <section class="benefits">
-
-
-                <a href="https://devnotec.storage.iran.liara.space/Front%20Gate%20Publics/Windows/Setup.exe">
-                    <div class="benefits-box-holder">
-                        <div class="box">
-                            <img src="src/images/windows.svg" />
-                            <span> Download For Windows</span>
-                            <strong>Size : 30 MB</strong>
-                        </div>
+                        <code>> gate -p YOUR_PROJECT_NAME</code>
                     </div>
-                </a>
+                </section>
+
+                <!-- Download Section -->
+                <h4 class="header-section">Download</h4>
+                <section class="benefits">
 
 
-                <a href="#">
-                    <div class="benefits-box-holder" diactive>
-                        <div class="box">
-                            <img src="src/images/linux.svg" />
-                            <span> Download for Linux</span>
-                            <strong>Soon ..</strong>
-
+                    <a href="https://devnotec.storage.iran.liara.space/Front%20Gate%20Publics/Windows/Setup.exe">
+                        <div class="benefits-box-holder">
+                            <div class="box">
+                                <img src="src/images/windows.svg" />
+                                <span> Download For Windows</span>
+                                <strong>Size : 30 MB</strong>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
+                    <a href="#">
+                        <div class="benefits-box-holder" diactive>
+                            <div class="box">
+                                <img src="src/images/linux.svg" />
+                                <span> Download for Linux</span>
+                                <strong>Soon ..</strong>
 
-                <a href="#">
-                    <div class="benefits-box-holder" diactive>
-                        <div class="box">
-                            <img src="src/images/mac.svg" />
-                            <span> Download for Mac</span>
-                            <strong>Soon ..</strong>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-            </section>
+
+                    <a href="#">
+                        <div class="benefits-box-holder" diactive>
+                            <div class="box">
+                                <img src="src/images/mac.svg" />
+                                <span> Download for Mac</span>
+                                <strong>Soon ..</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                </section>
+            </main>
+
 
             <footer class="p-4 d-flex">
 
