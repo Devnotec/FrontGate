@@ -98,6 +98,15 @@ body {
     margin-top: 2rem;
 }
 
+.code-character{
+    user-select: none;
+    color: #fcd34d;
+}
+
+.code-app-name{
+    color: #34d399;
+}
+
 .header-section {
     margin-top: 2rem;
     margin-left: 1.5rem;
@@ -135,7 +144,8 @@ body {
 
 code {
     padding: 24px;
-    background-color: #eceaea;
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #d6d3d1;
     margin-bottom: 3rem;
     margin-top: 3rem;
     border-radius: 0.25rem;
