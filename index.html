@@ -33,12 +33,12 @@
             </header>
 
             <!-- Getting Started Section -->
-            <main class="row col-xxxl-7 col-xxl-8 row col-xl-9 col-lg-10 col-md-11 col-sm-12 d-block mx-auto">
+            <section class="row col-xxxl-7 col-xxl-8 row col-xl-9 col-lg-10 col-md-11 col-sm-12 d-block mx-auto">
 
                 <h4 class="header-section">Why use the front gate ?</h4>
                 <section class="container">
-                    <div class="row">
-                        <p class="m-3 mx-5">
+                    <div class="row mx-5">
+                        <p class="m-3">
                             If you are building a front-end project, it will take you some time to structure your
                             program folders and create a basic platform for developing the Html CSS template, you can
                             use Front Gate, which we developed under the command line.
@@ -56,7 +56,17 @@
 
                         </p>
 
-                        <code><span class="code-character">></span> <span class="code-app-name">gate</span> -p YOUR_PROJECT_NAME</code>
+                        <code>
+                            <span id="code-section">
+                                <span class="code-character">$</span> <span class="code-app-name">gate</span> -p YOUR_PROJECT_NAME
+                            </span>
+                            <span id="copy-button" class="copy-button" onclick="copy()">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="svg-copy">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                                  </svg>
+                                  <span id="copy-status"></span>
+                            </span>
+                        </code>
                     </div>
                 </section>
 
@@ -98,7 +108,7 @@
                     </a>
 
                 </section>
-            </main>
+            </section>
 
 
             <footer class="p-4 d-flex">
@@ -119,6 +129,7 @@
 </body>
 <script src="src/js/bootstrap.bundle.min.js"></script>
 <script src="src/js/theme.min.js"></script>
+<script src="src/js/copy.js"></script>
 <script src="src/js/alpinejs.min.js" defer></script>
 
 
