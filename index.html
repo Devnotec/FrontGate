@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="fa" x-data="{ theme: '' , themeChecked:false }" x-init="theme==''?themeChecked=false:themeChecked=true;theme=getSystemTheme()">
+<html lang="fa" x-data="{ theme: '' , themeChecked:false }"
+    x-init="theme==''?themeChecked=false:themeChecked=true;theme=getSystemTheme()">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/bootstrap-grid.rtl.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/app.css">
     <link rel="stylesheet" href="src/css/toggle.css">
     <title>Front Gate | Structuring With One Command</title>
@@ -14,7 +18,8 @@
 
     <main class="container-fluid">
         <div class="menu p-3 fixed-top">
-            <input x-bind:checked="themeChecked"  type="checkbox" class="toggle" id="toggle-theme" x-on:click="theme == ''? theme='dark':theme=''">
+            <input x-bind:checked="themeChecked" type="checkbox" class="toggle" id="toggle-theme"
+                x-on:click="theme == ''? theme='dark':theme=''">
         </div>
         <div class="app-holder">
             <header class="row download-page-header">
@@ -28,58 +33,83 @@
             </header>
 
             <!-- Getting Started Section -->
+            <section class="row col-xxxl-7 col-xxl-8 row col-xl-9 col-lg-10 col-md-11 col-sm-12 d-block mx-auto">
 
-            <h4 class="header-section">Structuring With One Command</h4>
-            <section class="container">
-                <div class="row">
-                    <p class="m-3">
-                        Open Command Line in a Directory and Write just <strong>this</strong>
+                <h4 class="header-section">Why use the front gate ?</h4>
+                <section class="container">
+                    <div class="row mx-5">
+                        <p class="m-3">
+                            If you are building a front-end project, it will take you some time to structure your
+                            program folders and create a basic platform for developing the Html CSS template, you can
+                            use Front Gate, which we developed under the command line.
 
-                    </p>
+                        </p>
+                    </div>
+                </section>
 
-                    <code>> gate -p YOUR_PROJECT_NAME</code>
-                </div>
+                <h4 class="header-section">Structuring With One Command</h4>
+                <section class="container">
+                    <div class="row mx-5">
+                        <p class="mt-3 mb-2">
+                            Open a command line terminal in a directory and run the following command to create a
+                            <strong> standard </strong> structure for you!
+
+                        </p>
+
+                        <code>
+                            <span id="code-section">
+                                <span class="code-character">$</span> <span class="code-app-name">gate</span> -p YOUR_PROJECT_NAME
+                            </span>
+                            <span id="copy-button" class="copy-button" onclick="copy('gate -p YOUR_PROJECT_NAME')">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="svg-copy">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                                  </svg>
+                                  <span id="copy-status"></span>
+                            </span>
+                        </code>
+                    </div>
+                </section>
+
+                <!-- Download Section -->
+                <h4 class="header-section">Download</h4>
+                <section class="benefits">
+
+
+                    <a href="https://devnotec.storage.iran.liara.space/Front%20Gate%20Publics/Windows/Setup.exe">
+                        <div class="benefits-box-holder">
+                            <div class="box">
+                                <img src="src/images/windows.svg" />
+                                <span> Download For Windows</span>
+                                <strong>Size : 30 MB</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="benefits-box-holder" diactive>
+                            <div class="box">
+                                <img src="src/images/linux.svg" />
+                                <span> Download for Linux</span>
+                                <strong>Soon ..</strong>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="benefits-box-holder" diactive>
+                            <div class="box">
+                                <img src="src/images/mac.svg" />
+                                <span> Download for Mac</span>
+                                <strong>Soon ..</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                </section>
             </section>
 
-            <!-- Download Section -->
-            <h4 class="header-section">Download</h4>
-            <section class="benefits">
-
-
-                <a href="https://devnotec.storage.iran.liara.space/Front%20Gate%20Publics/Windows/Setup.exe">
-                    <div class="benefits-box-holder">
-                        <div class="box">
-                            <img src="src/images/windows.svg" />
-                            <span> Download For Windows</span>
-                            <strong>Size : 30 MB</strong>
-                        </div>
-                    </div>
-                </a>
-
-
-                <a href="#">
-                    <div class="benefits-box-holder" diactive>
-                        <div class="box">
-                            <img src="src/images/linux.svg" />
-                            <span> Download for Linux</span>
-                            <strong>Soon ..</strong>
-
-                        </div>
-                    </div>
-                </a>
-
-
-                <a href="#">
-                    <div class="benefits-box-holder" diactive>
-                        <div class="box">
-                            <img src="src/images/mac.svg" />
-                            <span> Download for Mac</span>
-                            <strong>Soon ..</strong>
-                        </div>
-                    </div>
-                </a>
-
-            </section>
 
             <footer class="p-4 d-flex">
 
@@ -99,6 +129,7 @@
 </body>
 <script src="src/js/bootstrap.bundle.min.js"></script>
 <script src="src/js/theme.min.js"></script>
+<script src="src/js/copy.js"></script>
 <script src="src/js/alpinejs.min.js" defer></script>
 
 
