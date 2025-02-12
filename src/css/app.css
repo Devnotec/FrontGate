@@ -259,3 +259,7 @@ body a {
     text-decoration: none;
     color: black;
 }
+footer{
+    flex-direction: column !important;
+    align-items: center !important;
+}
